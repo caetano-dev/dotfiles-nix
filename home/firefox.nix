@@ -19,6 +19,7 @@
       ublock-origin
       bitwarden
       darkreader
+      videospeed
       vimium
     ];
   };
