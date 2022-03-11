@@ -1,6 +1,6 @@
 {
   services.picom = {
-    enable = false;
+    enable = true;
 
     shadow = true;
     fade = true;
