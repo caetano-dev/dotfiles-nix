@@ -108,7 +108,7 @@
 
           nnoremap <SPACE> <Nop>
 
-    " nnoremap <leader>e <cmd>NERDtree<cr>
+    " nnoremap <leader>e <cmd>NERDtreeToggle<cr>
 
     " open Telescope
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
