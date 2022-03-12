@@ -74,8 +74,8 @@ in
       window.border = 4;
 
       gaps = {
-        inner = 4;
-        outer = 4;
+        inner = 5;
+        outer = 5;
 
         smartBorders = "on";
         smartGaps = true;

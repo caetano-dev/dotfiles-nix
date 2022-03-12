@@ -75,9 +75,6 @@
       ## rescript
       chenglou92.rescript-vscode
 
-      ## copilot
-      github.copilot
-
       ## tabnine
       tabnine.tabnine-vscode
 
