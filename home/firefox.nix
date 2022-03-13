@@ -11,6 +11,7 @@
         videospeed
         bitwarden
         vimium
+        sidebery
         # add the scrollanywhere extension
       ];
       profiles.gabe =
@@ -112,7 +113,7 @@
           userChrome = ''
             /*Question: WHY THE FUCK DOESN'T MY BROWSER HAVE TABS AND A SCROLLBAR? */
 
-            /*Answer: you need to use the treestyletab and scroolanywhere extensions.
+            /*Answer: you need to use the treeStyletab (or sidebery) and scroolanywhere extensions.
             or you can delete the css below.*/
 
             /* to hide the native tabs */

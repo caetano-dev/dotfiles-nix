@@ -6,7 +6,9 @@
   home-manager.users.gabe = {
     imports = [
       ./home/bash.nix
+      ./home/fish.nix
       ./home/firefox.nix
+      ./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
       ./home/kitty.nix

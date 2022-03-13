@@ -1,9 +1,6 @@
 {
-  programs.bash = {
+  programs.fish = {
     enable = true;
-    bashrcExtra = ''
-      eval "$(starship init bash)"
-    '';
 
     shellAliases = {
       "cat" = "bat";
@@ -27,6 +24,7 @@
     fzf = {
       enable = true;
       enableBashIntegration = true;
+      enableFishIntegration = true;
     };
 
     # Download utility.
