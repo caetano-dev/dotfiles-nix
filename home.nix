@@ -31,14 +31,18 @@
       mpv
       krita
       zathura
+      xfce.thunar
+      flameshot
 
       # online chat
       discord
 
       # dev
       tdesktop
+      ripgrep
       obsidian
       qbittorrent
+      fd
 
       # cli
       feh
@@ -49,6 +53,7 @@
       lm_sensors
       maim
       xclip
+      protonvpn-cli
 
       # nix
       rnix-lsp

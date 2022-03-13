@@ -116,7 +116,7 @@
     isNormalUser = true;
     uid = 1000;
     extraGroups = [ "wheel" "docker" ];
-    password = "00390039";
+    password = "...";
   };
 
   # System version.

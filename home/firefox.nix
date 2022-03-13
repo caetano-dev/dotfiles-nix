@@ -7,7 +7,6 @@
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         clearurls
-        sponsorblock
         darkreader
         videospeed
         bitwarden

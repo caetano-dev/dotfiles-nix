@@ -1,5 +1,16 @@
 { pkgs, ... }:
 
+let
+ripgrep = pkgs.vimUtils.buildVimPlugin {
+    name = "ripgrep";
+    src = pkgs.fetchFromGitHub {
+      owner = "BurntSushi";
+      repo = "ripgrep";
+      rev = "d0c36a77cc63c22648e792796b1815b44164653a";
+      sha256 = "0y2p5mz0d5fhg6n68lhfhl8p4mlwkb82q337c22djs4w5zyzggbc";
+    };
+  };
+in
 {
   programs.neovim = {
     enable = true;
@@ -16,6 +27,9 @@
     plugins = with pkgs.vimPlugins; [
       #themes
       gruvbox
+
+      #ripgrep
+      ripgrep
 
       #auto-pairs
       auto-pairs
@@ -46,10 +60,6 @@
       vim-airline-clock
       vim-airline-themes
 
-      #NERDtree
-      nerdtree
-      nerdtree-git-plugin
-
       # golang
       vim-go
       deoplete-go
@@ -63,6 +73,7 @@
 
       # others
       vimade
+
     ];
 
     extraConfig = ''
@@ -83,7 +94,7 @@
     set incsearch               " incremental search that shows partial matches.
     set splitright              " open new split panes to right
     set splitbelow              " and below
-    set ignorecase              " case insensitive
+    set ignorecase              " case insensitive/
     set cursorline              " highlight current cursorline
     set noswapfile              " disable creating swap file
     set autoindent              " indent a new line the same amount as the line just typed
@@ -106,9 +117,7 @@
     syntax enable
     "autocmd vimenter * ++nested colorscheme gruvbox
 
-          nnoremap <SPACE> <Nop>
-
-    " nnoremap <leader>e <cmd>NERDtreeToggle<cr>
+    nnoremap <SPACE> <Nop>
 
     " open Telescope
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
