@@ -163,6 +163,7 @@
             background-color: var(--lwt-accent-color) !important;
             border-color: var(--arrowpanel-dimmed-further) !important;
             }
+            *{transition: all 0.2s ease-in-out !important;}
 
             /*NAVBAR*/
 
@@ -449,18 +450,18 @@
             #urlbar,
             #searchbar {
             font-size: 13px !important;
-            border-radius: 7px !important;
+            border-radius: 20px !important;
             background-color: var(--toolbar-field-background-color) !important;
             border: 0 !important;
             box-shadow: none !important;
-            padding: 3px !important;
+            padding: 0px !important;
             background-clip: padding-box !important;
             text-align: center;
             transition: background-color 0.1s var(--ease-basic);
             -moz-box-align: center !important;
             display: block !important;
             margin: 0 !important;
-            top: 2px !important;
+            top: 0px !important;
             color: inherit !important;
             block-size: border-block !important;
 
