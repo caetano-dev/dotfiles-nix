@@ -114,6 +114,7 @@
   # User config.
   users.users.gabe = {
     isNormalUser = true;
+    shell = pkgs.fish;
     uid = 1000;
     extraGroups = [ "wheel" "docker" ];
     password = "...";

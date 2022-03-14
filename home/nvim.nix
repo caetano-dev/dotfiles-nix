@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-ripgrep = pkgs.vimUtils.buildVimPlugin {
+  ripgrep = pkgs.vimUtils.buildVimPlugin {
     name = "ripgrep";
     src = pkgs.fetchFromGitHub {
       owner = "BurntSushi";
@@ -26,7 +26,7 @@ in
 
     plugins = with pkgs.vimPlugins; [
       #themes
-      gruvbox
+      #gruvbox
 
       #ripgrep
       ripgrep

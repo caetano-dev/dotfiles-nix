@@ -5,7 +5,6 @@
   home-manager.useGlobalPkgs = true;
   home-manager.users.gabe = {
     imports = [
-      ./home/bash.nix
       ./home/fish.nix
       ./home/firefox.nix
       ./home/newsboat.nix

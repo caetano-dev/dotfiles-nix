@@ -1153,12 +1153,6 @@
             .titlebar-spacer {
             display: none !important;
             }
-
-
-
-
-
-
           '';
           userContent = ''
             *{scrollbar-width:none !important}

@@ -9,6 +9,7 @@ in
   programs.rofi = {
     enable = true;
     theme = "gruvbox-dark";
+
   };
 
   programs.i3status-rust = {
@@ -131,5 +132,5 @@ in
   };
 
   # wallpaper
-  home.file."./.background-image".source = ../wallpapers/gruvbox.jpg;
+  home.file."./.background-image".source = ../wallpapers/gruvboxLinux.jpg;
 }

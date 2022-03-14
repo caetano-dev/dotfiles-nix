@@ -36,6 +36,7 @@
       "window.titleBarStyle" = "custom";
 
       "workbench.colorTheme" = "Gruvbox Dark Medium";
+
       "workbench.iconTheme" = "file-icons";
 
       # Nix
