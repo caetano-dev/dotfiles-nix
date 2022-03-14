@@ -113,7 +113,7 @@
           userChrome = ''
             /*Question: WHY THE FUCK DOESN'T MY BROWSER HAVE TABS AND A SCROLLBAR? */
 
-            /*Answer: you need to use the treeStyletab (or sidebery) and scroolanywhere extensions.
+            /*Answer: you need to use the sidebery and scroolanywhere extensions.
             or you can delete the css below.*/
 
             /* to hide the native tabs */
@@ -126,7 +126,7 @@
             visibility: collapse !important;
             display: none !important;
             }
-            #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+            #sidebar-header {
             visibility: collapse !important
             }
             #customization-footer button,
@@ -1124,9 +1124,6 @@
             box-shadow: 2px 0 33px -3px var(--sidebar-shadow-color);
             }
             /* hide sidebar header for tree style tabs sidebar */
-            #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
-            display: none;
-            }
 
             #sidebar {
             border-right: solid var(--dividers) var(--sidebar-shadow-color) !important;
@@ -1134,11 +1131,6 @@
 
             toolbar {
             border: none !important;
-            }
-
-            /* Hide splitter, when using Tree Style Tab. */
-            #sidebar-splitter {
-            display: none !important;
             }
 
             /* hide tabs */
