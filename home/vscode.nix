@@ -5,7 +5,7 @@
     enable = true;
 
     userSettings = {
-      "editor.minimap.enabled" = false;
+      "editor.minimap.enabled" = true;
 
       # auto update tags when edited
       "editor.linkedEditing" = true;
@@ -39,6 +39,9 @@
 
       "workbench.iconTheme" = "file-icons";
 
+      # fuck telemetry
+      "telemetry.telemetryLevel" = "off";
+
       # Nix
       "nix.enableLanguageServer" = true;
       "[nix]" = {
@@ -57,6 +60,7 @@
       ## Git
       eamodio.gitlens
 
+
       ## Nix
       jnoortheen.nix-ide
 
@@ -72,6 +76,9 @@
 
       ## csharp
       ms-dotnettools.csharp
+
+      #github.copilot
+      github.copilot
 
       ## rescript
       chenglou92.rescript-vscode

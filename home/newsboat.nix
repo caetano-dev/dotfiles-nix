@@ -16,14 +16,14 @@ in
 
       # Aggregators
       {
-        title = "Lobste.rs - Personalized";
-        url = "https://lobste.rs/t/nix,go,linux,privacy.rss";
-        tags = [ "tech" "go" "nix" "linux" "privacy"];
-      }
-      {
         title = "Hacker Noon - Frontpage";
         url = "https://hackernoon.com/feed";
         tags = [ "tech"];
+      }
+      {
+        title = "Lobste.rs - Personalized";
+        url = "https://lobste.rs/t/nix,go,rust,linux,privacy.rss";
+        tags = [ "tech" "go" "nix" "rust" "linux" "privacy"];
       }
       {
         title = "Lobste.rs - Frontpage";

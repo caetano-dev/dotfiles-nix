@@ -1,16 +1,5 @@
 { pkgs, ... }:
 
-let
-  ripgrep = pkgs.vimUtils.buildVimPlugin {
-    name = "ripgrep";
-    src = pkgs.fetchFromGitHub {
-      owner = "BurntSushi";
-      repo = "ripgrep";
-      rev = "d0c36a77cc63c22648e792796b1815b44164653a";
-      sha256 = "0y2p5mz0d5fhg6n68lhfhl8p4mlwkb82q337c22djs4w5zyzggbc";
-    };
-  };
-in
 {
   programs.neovim = {
     enable = true;
@@ -37,11 +26,21 @@ in
       #vim-closetag
       vim-closetag
 
+      #rust.vim
+      rust-vim
+
       #plenary
       plenary-nvim
 
       #vim-devicons
       vim-devicons
+
+      #indentLine
+      indentLine
+
+      #nvim-tree-lua
+      nvim-tree-lua
+      nvim-web-devicons
 
       #nerdcommenter
       nerdcommenter
