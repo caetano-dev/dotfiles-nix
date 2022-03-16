@@ -21,14 +21,19 @@ in
         tags = [ "tech" "go" "nix" "linux" "privacy"];
       }
       {
+        title = "Hacker Noon - Frontpage";
+        url = "https://hackernoon.com/feed";
+        tags = [ "tech"];
+      }
+      {
         title = "Lobste.rs - Frontpage";
         url = "https://lobste.rs/rss";
         tags = [ "tech" ];
       }
       {
         title = "Hacker News - Personalized";
-        url = "https://hnrss.org/newest?q=go+OR+privacy+OR+linux+cia+breach+data+leak+hack";
-        tags = [ "tech" "go" "open-source" "linux" "privacy" "breach" "data" "leak" "hack"];
+        url = "https://hnrss.org/newest?q=go+OR+privacy+OR+linux+cia+breach+data+leak+hack+rust";
+        tags = [ "tech" "go" "open-source" "linux" "privacy" "breach" "data" "leak" "hack" "rust"];
       }
       {
         title = "Hacker News - Frontpage";

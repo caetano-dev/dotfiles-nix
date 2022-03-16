@@ -20,12 +20,6 @@ in
       icons = "awesome";
       blocks = [
         {
-          block = "music";
-          player = "spotify";
-          buttons = [ "prev" "play" "next" ];
-          on_collapsed_click = "spotify";
-        }
-        {
           block = "memory";
           display_type = "memory";
           format_mem = "{mem_used_percents}";
@@ -34,16 +28,6 @@ in
         {
           block = "cpu";
           format = "{utilization}";
-        }
-        {
-          block = "temperature";
-          collapsed = false;
-          interval = 1;
-          format = "{max}";
-          chip = "k10temp-*";
-          idle = 70;
-          info = 75;
-          warning = 80;
         }
         {
           block = "sound";

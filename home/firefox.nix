@@ -1051,7 +1051,7 @@
             --wc-vertical-shift: 18px;
             /* larger value moves window controls down,*/
             /* can be negative(moves controls up) */
-            /* Experiemntal: 55px if tabline visible, -25px if tabline hidden */
+            /* Experimental: 55px if tabline visible, -25px if tabline hidden */
             --wc-left-space: 15px; /* add space to the left of window controls*/
             --wc-right-space: 18px; /* add space to the right of window controls*/
             /* left-space shifts window-controls */

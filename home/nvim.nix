@@ -29,7 +29,7 @@ in
       #gruvbox
 
       #ripgrep
-      ripgrep
+      #ripgrep
 
       #auto-pairs
       auto-pairs
@@ -81,6 +81,7 @@ in
     let mapleader=" "
     let g:tablineclosebutton=1
     let g:airline#extensions#tabline#enabled = 1
+    let g:airline_theme="base16_gruvbox_dark_hard"
 
     set number                  " add line numbers
     set mouse=v                 " middle-click paste with
