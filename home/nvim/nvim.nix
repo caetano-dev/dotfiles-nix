@@ -13,7 +13,7 @@
 
     plugins = with pkgs.vimPlugins; [
       #themes
-      #gruvbox
+      gruvbox
 
       #auto-pairs
       auto-pairs
@@ -27,8 +27,9 @@
       #plenary
       plenary-nvim
 
-      #vim-devicons
+      #nvim-tree
       vim-devicons
+      nvim-tree-lua
 
       #indentLine
       indentLine
@@ -44,7 +45,6 @@
 
       #coc.nvim
       coc-nvim
-
 
       #nvim-cmp
       nvim-cmp
@@ -83,9 +83,16 @@
 
     extraConfig = '' 
 
+    
+    lua << EOF
+      vim.defer_fn(function()
+      vim.cmd[[
     luafile /home/gabe/.config/dotfiles/home/nvim/lua/treesitter.lua
     luafile /home/gabe/.config/dotfiles/home/nvim/lua/lsp.lua
-    
+    luafile /home/gabe/.config/dotfiles/home/nvim/lua/nvim-tree.lua
+      ]]
+      end, 70)
+    EOF
 
     let mapleader=" "
     let g:tablineclosebutton=1
@@ -131,6 +138,9 @@
 
     nnoremap <SPACE> <Nop>
 
+    " open nvim tree
+    nnoremap <leader>e <cmd>NvimTreeToggle<cr>
+    
     " open Telescope
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
     nnoremap <leader>fw <cmd>Telescope live_grep<cr>
