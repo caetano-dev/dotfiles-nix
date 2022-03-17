@@ -11,7 +11,7 @@
       ./home/git.nix
       ./home/i3.nix
       ./home/kitty.nix
-      ./home/nvim.nix
+      ./home/nvim/nvim.nix
       ./home/rbw.nix
       ./home/starship.nix
       ./home/vscode.nix
@@ -39,11 +39,25 @@
       discord
 
       # dev
+      lua
       tdesktop
+      cargo
+      rustc
+      gcc
+      rustfmt
       ripgrep
       obsidian
       qbittorrent
+      python38     
       fd
+
+      # language servers
+      rnix-lsp
+      sumneko-lua-language-server
+      rust-analyzer
+      nodePackages.pyright
+      nodePackages.eslint
+      sqls
 
       # cli
       feh

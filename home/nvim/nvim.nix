@@ -11,14 +11,9 @@
     withPython3 = true;
     withRuby = true;
 
-
-
     plugins = with pkgs.vimPlugins; [
       #themes
       #gruvbox
-
-      #ripgrep
-      #ripgrep
 
       #auto-pairs
       auto-pairs
@@ -38,8 +33,10 @@
       #indentLine
       indentLine
 
-      #nvim-tree-lua
-      nvim-tree-lua
+      #bufferline
+      bufferline-nvim
+
+      #devicons
       nvim-web-devicons
 
       #nerdcommenter
@@ -48,8 +45,13 @@
       #coc.nvim
       coc-nvim
 
+
+      #nvim-cmp
+      nvim-cmp
+
       #nvim-treesitter
-      nvim-treesitter
+      #nvim-treesitter
+      (nvim-treesitter.withPlugins (plugins: pkgs.tree-sitter.allGrammars))
 
       #tabline
       tabline-nvim
@@ -58,6 +60,10 @@
       vim-airline
       vim-airline-clock
       vim-airline-themes
+
+      #language server
+      nvim-lspconfig
+      nvim-compe
 
       # golang
       vim-go
@@ -75,7 +81,11 @@
 
     ];
 
-    extraConfig = ''
+    extraConfig = '' 
+
+    luafile /home/gabe/.config/dotfiles/home/nvim/lua/treesitter.lua
+    luafile /home/gabe/.config/dotfiles/home/nvim/lua/lsp.lua
+    
 
     let mapleader=" "
     let g:tablineclosebutton=1
@@ -109,9 +119,11 @@
     filetype plugin indent on   " allow auto-indenting depending on file type
 
     " color schemes
-    "if (has("termguicolors"))
     "set termguicolors
-    "endif
+
+    lua << EOF
+    require("bufferline").setup{}
+    EOF
 
     syntax on                   " syntax highlighting
     syntax enable
