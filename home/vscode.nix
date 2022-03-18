@@ -1,5 +1,18 @@
 { pkgs, ... }:
 
+
+let
+wix.glean = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
+  mktplcRef = {
+    publisher = "wix";
+    name = "glean";
+    version = "5.2.2";
+    sha256 = "sha256-JkD5q2iSu4zPmRL3Hpv8VdI3snbNL7U0XttreGGrLH4=";
+  };
+};
+
+in
+
 {
   programs.vscode = {
     enable = true;
@@ -51,15 +64,12 @@
     };
 
     extensions = with pkgs.vscode-extensions; [
-      ## Themes
-      # arcticicestudio.nord-visual-studio-code
 
       ## Icons
       file-icons.file-icons
 
       ## Git
       eamodio.gitlens
-
 
       ## Nix
       jnoortheen.nix-ide
@@ -74,12 +84,21 @@
       ## Markdown
       yzhang.markdown-all-in-one
 
-      ## csharp
-      ms-dotnettools.csharp
-
       #github.copilot
       github.copilot
+      
+      #glean
+      wix.glean
 
+      #vim
+      vscodevim.vim
+
+      #python
+      ms-python.python
+
+      #path-intellisense
+      christian-kohler.path-intellisense
+      
       ## rescript
       chenglou92.rescript-vscode
 

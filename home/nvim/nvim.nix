@@ -1,5 +1,16 @@
 { pkgs, ... }:
 
+let
+github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
+    pname = "github-copilot-vim";
+    version = "1.1.0";
+    src = pkgs.fetchgit {
+      url = "https://github.com/github/copilot.vim";
+      rev = "c01314840b94da0b9767b52f8a4bbc579214e509";
+      hash = "sha256-gnFiuXpKF55cWxCXNXe3zqQaVmGoUV5aRBGIlyUUfIM=";
+    };
+  };
+  in
 {
   programs.neovim = {
     enable = true;
@@ -14,6 +25,9 @@
     plugins = with pkgs.vimPlugins; [
       #themes
       gruvbox
+
+      #github-copilot-vim
+      github-copilot-vim
 
       #auto-pairs
       auto-pairs
