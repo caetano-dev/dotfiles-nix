@@ -15,6 +15,11 @@ in
       }
 
       # Aggregators
+      { 
+        title = "EFF";
+        url = "https://www.eff.org/rss/updates.xml";
+        tags = [ "tech" "privacy" ];
+}
       {
         title = "Hacker Noon - Frontpage";
         url = "https://hackernoon.com/feed";

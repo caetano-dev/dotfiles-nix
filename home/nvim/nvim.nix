@@ -26,6 +26,9 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
       #themes
       gruvbox
 
+      #colorizer
+      nvim-colorizer-lua
+
       #github-copilot-vim
       github-copilot-vim
 
@@ -104,6 +107,7 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     luafile /home/gabe/.config/dotfiles/home/nvim/lua/treesitter.lua
     luafile /home/gabe/.config/dotfiles/home/nvim/lua/lsp.lua
     luafile /home/gabe/.config/dotfiles/home/nvim/lua/nvim-tree.lua
+    luafile /home/gabe/.config/dotfiles/home/nvim/lua/colorizer.lua
       ]]
       end, 70)
     EOF
@@ -140,10 +144,12 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     filetype plugin indent on   " allow auto-indenting depending on file type
 
     " color schemes
-    "set termguicolors
+    set termguicolors
+    colorscheme gruvbox
 
     lua << EOF
     require("bufferline").setup{}
+    require("colorizer").setup{}
     EOF
 
     syntax on                   " syntax highlighting
@@ -152,8 +158,10 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
 
     nnoremap <SPACE> <Nop>
 
-    " open nvim tree
-    nnoremap <leader>e <cmd>NvimTreeToggle<cr>
+    " focus on nvim tree
+    nnoremap <leader>e <cmd>NvimTreeFocus<cr>
+    " close nvim tree
+    nnoremap <leader>E <cmd>NvimTreeClose<cr>
     
     " open Telescope
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -179,4 +187,10 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     nnoremap <C-l> <C-w>l
     '';
   };
+  home.packages = with pkgs; [ 
+      rnix-lsp
+      sumneko-lua-language-server
+  ];
+
 }
+

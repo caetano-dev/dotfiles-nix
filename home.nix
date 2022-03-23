@@ -33,15 +33,17 @@
       krita
       zathura
       xfce.thunar
+      xournalpp 
       flameshot
+      ungoogled-chromium
 
       # online chat
       discord
 
       # dev
+      cargo
       lua
       tdesktop
-      cargo
       rustc
       gcc
       rustfmt
@@ -50,14 +52,6 @@
       qbittorrent
       python38     
       fd
-
-      # language servers
-      rnix-lsp
-      sumneko-lua-language-server
-      rust-analyzer
-      nodePackages.pyright
-      nodePackages.eslint
-      sqls
 
       # cli
       feh

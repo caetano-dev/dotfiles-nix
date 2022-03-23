@@ -11,7 +11,7 @@ in
     font = {
       package = nerdfontsHasklug;
       name = "Hasklug Nerd Font";
-      size = 9;
+      size = 10;
     };
 
     settings = {

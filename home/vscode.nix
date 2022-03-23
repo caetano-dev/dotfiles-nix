@@ -18,7 +18,12 @@ in
     enable = true;
 
     userSettings = {
-      "editor.minimap.enabled" = true;
+
+      # lines
+      "editor.lineNumbers" = "relative";
+
+      # minimap
+      "editor.minimap.enabled" = false;
 
       # auto update tags when edited
       "editor.linkedEditing" = true;
@@ -54,6 +59,14 @@ in
 
       # fuck telemetry
       "telemetry.telemetryLevel" = "off";
+      # except for github copilot ❤️
+      "editor.inlineSuggest.enabled" = true;
+
+      # tabnine
+      "tabnine.experimentalAutoImports" = true;
+
+      # disable welcome
+      "workbench.startupEditor" = "newUntitledFile";
 
       # Nix
       "nix.enableLanguageServer" = true;
@@ -80,6 +93,7 @@ in
       ## Rust
       matklad.rust-analyzer
       vadimcn.vscode-lldb # debug
+      serayuzgur.crates
 
       ## Markdown
       yzhang.markdown-all-in-one
