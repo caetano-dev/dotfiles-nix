@@ -71,6 +71,10 @@ in
         "${mod}+Return" = "exec kitty";
         "${mod}+Shift+s" = "exec sh -c 'maim -s | xclip -selection clipboard -t image/png'";
         "${mod}+Shift+l" = "exec sh -c '${pkgs.i3lock}/bin/i3lock -c 222222 & sleep 5 && xset dpms force of'";
+        "${mod}+k" = "focus up";
+        "${mod}+j" = "focus down";
+        "${mod}+h" = "focus left";
+        "${mod}+l" = "focus right";
       };
 
       bars = [

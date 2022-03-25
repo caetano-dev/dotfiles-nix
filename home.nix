@@ -52,6 +52,13 @@
       qbittorrent
       python38     
       fd
+      # language servers
+      rust-analyzer
+      nodePackages.eslint
+      gopls
+      pyright
+      sqls
+      rnix-lsp
 
       # cli
       feh
@@ -65,7 +72,6 @@
       protonvpn-cli
 
       # nix
-      rnix-lsp
       nixpkgs-fmt
     ];
 
