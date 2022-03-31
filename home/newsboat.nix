@@ -19,7 +19,13 @@ in
         title = "EFF";
         url = "https://www.eff.org/rss/updates.xml";
         tags = [ "tech" "privacy" ];
-}
+      }
+
+      { 
+        title = "Bleeping Computer";
+        url = "https://www.bleepingcomputer.com/feed/";
+        tags = [ "tech" ];
+      }
       {
         title = "Hacker Noon - Frontpage";
         url = "https://hackernoon.com/feed";

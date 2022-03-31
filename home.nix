@@ -53,6 +53,7 @@
       python38     
       fd
       # language servers
+      nodePackages.typescript-language-server
       rust-analyzer
       nodePackages.eslint
       gopls
