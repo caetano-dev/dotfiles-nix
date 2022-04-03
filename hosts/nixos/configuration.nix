@@ -4,7 +4,6 @@
   imports = [
     # grub theme
     ./grub/themes/fallout.nix
-
     # picom
     ./services/picom.nix
     #redshift
@@ -13,12 +12,10 @@
     ./services/priting.nix
     # wacom
     ./services/wacom.nix
-
     # nix
     ./modules/nix.nix
     # docker
     ./modules/docker.nix
-
     # hardware configuration
     ./hardware-configuration.nix
   ];
@@ -56,7 +53,7 @@
 
     hasklig
     liberation_ttf
-    mplus-outline-fonts
+    #mplus-outline-fonts
   ];
 
   # Enable unfree packages.

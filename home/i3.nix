@@ -120,5 +120,5 @@ in
   };
 
   # wallpaper
-  home.file."./.background-image".source = ../wallpapers/gruvboxLinux.jpg;
+  home.file."./.background-image".source = ../wallpapers/gruvboxPattern.jpg;
 }

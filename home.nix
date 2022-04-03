@@ -71,6 +71,8 @@
       maim
       xclip
       protonvpn-cli
+      unzip
+      cmus
 
       # nix
       nixpkgs-fmt
