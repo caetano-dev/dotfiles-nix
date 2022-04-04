@@ -36,6 +36,7 @@
       xournalpp 
       flameshot
       ungoogled-chromium
+      picard
 
       # online chat
       discord
@@ -72,7 +73,7 @@
       xclip
       protonvpn-cli
       unzip
-      cmus
+      musikcube
 
       # nix
       nixpkgs-fmt
