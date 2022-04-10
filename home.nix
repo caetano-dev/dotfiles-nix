@@ -37,6 +37,7 @@
       flameshot
       ungoogled-chromium
       picard
+      tor-browser-bundle-bin
 
       # online chat
       discord
@@ -73,7 +74,6 @@
       xclip
       protonvpn-cli
       unzip
-      musikcube
 
       # nix
       nixpkgs-fmt
