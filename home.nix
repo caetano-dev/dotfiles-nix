@@ -39,13 +39,23 @@
       picard
       tor-browser-bundle-bin
 
+      # hacking
+      arp-scan
+      p7zip
+      virtualbox
+      nikto
+      nmap
+      metasploit
+      amass
+      wireshark
+
       # online chat
       discord
+      tdesktop
 
       # dev
       cargo
       lua
-      tdesktop
       rustc
       gcc
       rustfmt
