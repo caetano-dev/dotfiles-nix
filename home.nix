@@ -6,7 +6,7 @@
   home-manager.users.gabe = {
     imports = [
       ./home/fish.nix
-      ./home/firefox.nix
+      #./home/firefox.nix
       ./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
@@ -38,14 +38,18 @@
       ungoogled-chromium
       picard
       tor-browser-bundle-bin
+      brave
 
       # hacking
+      amass
+      subfinder
       arp-scan
       p7zip
-      virtualbox
       nikto
       nmap
       metasploit
+      burpsuite
+      netcat-gnu
       amass
       wireshark
 
