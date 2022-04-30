@@ -120,5 +120,5 @@ in
   };
 
   # wallpaper
-  home.file."./.background-image".source = ../wallpapers/gruvboxPattern.jpg;
+  home.file."./.background-image".source = ../wallpapers/mrRobot.jpg;
 }

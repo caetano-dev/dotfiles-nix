@@ -1,18 +1,5 @@
 { pkgs, ... }:
 
-
-let
-wix.glean = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
-  mktplcRef = {
-    publisher = "wix";
-    name = "glean";
-    version = "5.2.2";
-    sha256 = "sha256-JkD5q2iSu4zPmRL3Hpv8VdI3snbNL7U0XttreGGrLH4=";
-  };
-};
-
-in
-
 {
   programs.vscode = {
     enable = true;
@@ -101,9 +88,6 @@ in
       #github.copilot
       github.copilot
       
-      #glean
-      wix.glean
-
       #vim
       vscodevim.vim
 
