@@ -1,7 +1,7 @@
 -- This enables all the language servers I want on my system
 -- Change these to whatever languages you use
 require'lspconfig'.rnix.setup{}
-require'lspconfig'.sumneko_lua.setup{}
+--require'lspconfig'.sumneko_lua.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.eslint.setup{}
 require'lspconfig'.gopls.setup{}
@@ -87,32 +87,3 @@ cmp.setup({
     },
 })
 
--- set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
-local sumneko_root_path = vim.fn.stdpath('cache')..'/lspconfig/sumneko_lua/lua-language-server'
-local sumneko_binary = "lua-language-server"
-
-local runtime_path = vim.split(package.path, ';')
-table.insert(runtime_path, "lua/?.lua")
-table.insert(runtime_path, "lua/?/init.lua")
-
-require'lspconfig'.sumneko_lua.setup {
-    cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
-    settings = {
-        Lua = {
-            runtime = {
-                version = 'LuaJIT',
-                path = runtime_path,
-            },
-            diagnostics = {
-                globals = {'vim'},
-            },
-            workspace = {
-                library = vim.api.nvim_get_runtime_file("", true),
-                preloadFileSize = 120
-            },
-            telemetry = {
-                enable = false,
-            },
-        },
-    },
-}

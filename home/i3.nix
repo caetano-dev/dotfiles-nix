@@ -48,7 +48,6 @@ in
 
     config = {
       modifier = mod;
-
       fonts = {
         names = [ "Hasklig" ];
         size = 11.0;

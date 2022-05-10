@@ -43,7 +43,7 @@
   networking.interfaces.enp2s0.useDHCP = true;
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "fr_FR.UTF-8";
   console = {
     font = "Lat2-Terminus16";
     keyMap = "br-abnt2";
@@ -59,7 +59,6 @@
 
     hasklig
     liberation_ttf
-    #mplus-outline-fonts
   ];
 
   # Enable unfree packages.
@@ -82,7 +81,9 @@
       defaultSession = "none+i3";
     };
 
-    desktopManager.xterm.enable = false;
+    desktopManager = {
+      xterm.enable = false;
+    };
   };
 
   # Configure keymap in X11.

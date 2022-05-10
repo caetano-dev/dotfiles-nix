@@ -189,7 +189,7 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
   };
   home.packages = with pkgs; [ 
       rnix-lsp
-      sumneko-lua-language-server
+      #sumneko-lua-language-server
   ];
 
 }
