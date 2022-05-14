@@ -21,9 +21,9 @@
   ];
 
   # Virtualbox
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
-  virtualisation.virtualbox.host.enableExtensionPack = true;
+  #virtualisation.virtualbox.host.enable = true;
+  #users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  #virtualisation.virtualbox.host.enableExtensionPack = true;
 
 
  #systemd-boot EFI boot loader.
@@ -72,17 +72,18 @@
     enable = true;
 
     windowManager.i3 = {
-      enable = true;
+      enable = false;
       package = pkgs.i3-gaps;
     };
 
     displayManager = {
       lightdm.enable = true;
-      defaultSession = "none+i3";
+      #defaultSession = "none+i3";
+      defaultSession = "gnome";
     };
 
     desktopManager = {
-      xterm.enable = false;
+      gnome.enable = true;
     };
   };
 
