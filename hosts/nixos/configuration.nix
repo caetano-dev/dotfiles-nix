@@ -72,18 +72,21 @@
     enable = true;
 
     windowManager.i3 = {
-      enable = false;
+      enable = true;
       package = pkgs.i3-gaps;
     };
 
     displayManager = {
       lightdm.enable = true;
-      #defaultSession = "none+i3";
-      defaultSession = "gnome";
+      defaultSession = "xfce+i3";
+      #defaultSession = "gnome";
     };
 
     desktopManager = {
-      gnome.enable = true;
+      #gnome.enable = true;
+      xfce.noDesktop = true;
+      xfce.enableXfwm = false;
+      xfce.enable = true;
     };
   };
 

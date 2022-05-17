@@ -10,7 +10,7 @@
       #./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
-      #./home/kitty.nix
+      ./home/kitty.nix
       ./home/nvim/nvim.nix
       ./home/rbw.nix
       ./home/starship.nix
@@ -32,9 +32,8 @@
       mpv
       krita
       zathura
-      #xfce.thunar
       xournalpp 
-      flameshot
+      #flameshot
       ungoogled-chromium
       picard
       tor-browser-bundle-bin
