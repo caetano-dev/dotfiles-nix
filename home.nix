@@ -10,7 +10,7 @@
       ./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
-      #./home/kitty.nix
+      ./home/kitty.nix
       #./home/nvim/nvim.nix
       ./home/rbw.nix
       ./home/starship.nix

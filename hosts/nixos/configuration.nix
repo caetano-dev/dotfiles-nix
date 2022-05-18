@@ -5,7 +5,7 @@
     # grub theme
     ./grub/themes/fallout.nix
     # picom
-    ./services/picom.nix
+    #./services/picom.nix
     #redshift
     ./services/redshift.nix
     # priting
@@ -28,7 +28,7 @@
 
  #systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true; 
+  boot.loader.efi.canTouchEfiVariables = true;
 
   # clear /tmp
   boot.cleanTmpDir = true;
