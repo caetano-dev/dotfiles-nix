@@ -11,7 +11,7 @@
       ./home/git.nix
       ./home/i3.nix
       #./home/kitty.nix
-      ./home/nvim/nvim.nix
+      #./home/nvim/nvim.nix
       ./home/rbw.nix
       ./home/starship.nix
       ./home/vscode.nix
@@ -32,20 +32,9 @@
       mpv
       krita
       zathura
-<<<<<<< HEAD
-<<<<<<< HEAD
       xournalpp
       #flameshot
-=======
       xfce.thunar
-      xournalpp 
-      flameshot
->>>>>>> parent of dce21e8 (backup)
-=======
-      #xfce.thunar
-      xournalpp 
-      flameshot
->>>>>>> parent of 3128e92 (backup)
       ungoogled-chromium
       picard
       tor-browser-bundle-bin
