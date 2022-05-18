@@ -72,12 +72,13 @@
     enable = true;
 
     windowManager.i3 = {
-      enable = true;
+      enable = false;
       package = pkgs.i3-gaps;
     };
 
     displayManager = {
       lightdm.enable = true;
+<<<<<<< HEAD
 <<<<<<< HEAD
       defaultSession = "xfce+i3";
       #defaultSession = "gnome";
@@ -95,6 +96,14 @@
     desktopManager = {
       xterm.enable = false;
 >>>>>>> parent of dce21e8 (backup)
+=======
+      #defaultSession = "none+i3";
+      defaultSession = "gnome";
+    };
+
+    desktopManager = {
+      gnome.enable = true;
+>>>>>>> parent of 3128e92 (backup)
     };
   };
 

@@ -10,7 +10,7 @@
       ./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
-      ./home/kitty.nix
+      #./home/kitty.nix
       ./home/nvim/nvim.nix
       ./home/rbw.nix
       ./home/starship.nix
@@ -33,6 +33,7 @@
       krita
       zathura
 <<<<<<< HEAD
+<<<<<<< HEAD
       xournalpp
       #flameshot
 =======
@@ -40,6 +41,11 @@
       xournalpp 
       flameshot
 >>>>>>> parent of dce21e8 (backup)
+=======
+      #xfce.thunar
+      xournalpp 
+      flameshot
+>>>>>>> parent of 3128e92 (backup)
       ungoogled-chromium
       picard
       tor-browser-bundle-bin
