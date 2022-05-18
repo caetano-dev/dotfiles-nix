@@ -7,7 +7,7 @@
     imports = [
       ./home/fish.nix
       #./home/firefox.nix
-      #./home/newsboat.nix
+      ./home/newsboat.nix
       ./home/git.nix
       ./home/i3.nix
       ./home/kitty.nix
@@ -32,13 +32,18 @@
       mpv
       krita
       zathura
+<<<<<<< HEAD
       xournalpp
       #flameshot
+=======
+      xfce.thunar
+      xournalpp 
+      flameshot
+>>>>>>> parent of dce21e8 (backup)
       ungoogled-chromium
       picard
       tor-browser-bundle-bin
       brave
-      gnome3.gnome-tweaks
 
       # hacking
       amass
@@ -88,7 +93,6 @@
       xclip
       protonvpn-cli
       unzip
-      neofetch
 
       # nix
       nixpkgs-fmt

@@ -21,9 +21,9 @@
   ];
 
   # Virtualbox
-  #virtualisation.virtualbox.host.enable = true;
-  #users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
-  #virtualisation.virtualbox.host.enableExtensionPack = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user-with-access-to-virtualbox" ];
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
 
  #systemd-boot EFI boot loader.
@@ -78,6 +78,7 @@
 
     displayManager = {
       lightdm.enable = true;
+<<<<<<< HEAD
       defaultSession = "xfce+i3";
       #defaultSession = "gnome";
     };
@@ -87,6 +88,13 @@
       xfce.noDesktop = true;
       xfce.enableXfwm = false;
       xfce.enable = true;
+=======
+      defaultSession = "none+i3";
+    };
+
+    desktopManager = {
+      xterm.enable = false;
+>>>>>>> parent of dce21e8 (backup)
     };
   };
 

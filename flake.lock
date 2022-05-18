@@ -7,11 +7,19 @@
         ]
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1652452047,
         "narHash": "sha256-O6DI0dMH/5rNM+z9CQ/nqRMNBpNsU7TtLSsafKLZTHY=",
         "owner": "nix-community",
         "repo": "home-manager",
         "rev": "32a7da69dc53c9eb5ad0675eb7fdc58f7fe35272",
+=======
+        "lastModified": 1651262513,
+        "narHash": "sha256-5iW1fevaAD0Rbtbgb4I++7fyaND3oarGs3mAjyadE0Y=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "f8b51be7149a0735e87b232d21ae4f852619eac7",
+>>>>>>> parent of dce21e8 (backup)
         "type": "github"
       },
       "original": {
@@ -37,11 +45,19 @@
     },
     "nixpkgs": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1652659998,
         "narHash": "sha256-FqNrXC1EE6U2RACwXBlsAvg1lqQGLYpuYb6+W3DL9vA=",
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "1d7db1b9e4cf1ee075a9f52e5c36f7b9f4207502",
+=======
+        "lastModified": 1651007983,
+        "narHash": "sha256-GNay7yDPtLcRcKCNHldug85AhAvBpTtPEJWSSDYBw8U=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e10da1c7f542515b609f8dfbcf788f3d85b14936",
+>>>>>>> parent of dce21e8 (backup)
         "type": "github"
       },
       "original": {
@@ -53,11 +69,19 @@
     },
     "nur": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1652877807,
         "narHash": "sha256-SjBDrxFW++M/G8+tAbEtAK7jrzjQe1fnNr5A7q7NSZw=",
         "owner": "nix-community",
         "repo": "nur",
         "rev": "d1a12e09f8e0342e9bca13991ae70c9f32a08ce9",
+=======
+        "lastModified": 1651320236,
+        "narHash": "sha256-f3R87k440mwnsRkw3IgOETC7osy9WURYrrydjDRL2N8=",
+        "owner": "nix-community",
+        "repo": "nur",
+        "rev": "348f6ba2b9628302ae7496d47472c12b335b9e6b",
+>>>>>>> parent of dce21e8 (backup)
         "type": "github"
       },
       "original": {
@@ -77,11 +101,19 @@
     },
     "utils": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1652776076,
         "narHash": "sha256-gzTw/v1vj4dOVbpBSJX4J0DwUR6LIyXo7/SuuTJp1kM=",
         "owner": "numtide",
         "repo": "flake-utils",
         "rev": "04c1b180862888302ddfb2e3ad9eaa63afc60cf8",
+=======
+        "lastModified": 1649676176,
+        "narHash": "sha256-OWKJratjt2RW151VUlJPRALb7OU2S5s+f0vLj4o1bHM=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "a4b154ebbdc88c8498a5c7b01589addc9e9cb678",
+>>>>>>> parent of dce21e8 (backup)
         "type": "github"
       },
       "original": {
