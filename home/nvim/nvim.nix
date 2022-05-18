@@ -3,7 +3,7 @@
 let
 github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     pname = "github-copilot-vim";
-    version = "1.3.0";
+    version = "1.3.1";
     src = pkgs.fetchgit {
       url = "https://github.com/github/copilot.vim";
       rev = "c01314840b94da0b9767b52f8a4bbc579214e509";
@@ -21,6 +21,9 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     withNodeJs = true;
     withPython3 = true;
     withRuby = true;
+    coc = {
+      enable = true;
+    };
 
     plugins = with pkgs.vimPlugins; [
       #themes
@@ -60,9 +63,6 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
       #nerdcommenter
       nerdcommenter
 
-      #coc.nvim
-      coc-nvim
-
       #nvim-cmp
       nvim-cmp
 
@@ -98,9 +98,9 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
 
     ];
 
-    extraConfig = '' 
+    extraConfig = ''
 
-    
+
     lua << EOF
       vim.defer_fn(function()
       vim.cmd[[
@@ -162,7 +162,7 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     nnoremap <leader>e <cmd>NvimTreeFocus<cr>
     " close nvim tree
     nnoremap <leader>E <cmd>NvimTreeClose<cr>
-    
+
     " open Telescope
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
     nnoremap <leader>fw <cmd>Telescope live_grep<cr>
@@ -187,7 +187,7 @@ github-copilot-vim = pkgs.vimUtils.buildVimPlugin rec {
     nnoremap <C-l> <C-w>l
     '';
   };
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
       rnix-lsp
       #sumneko-lua-language-server
   ];

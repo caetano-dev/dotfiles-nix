@@ -32,7 +32,7 @@
       mpv
       krita
       zathura
-      xournalpp 
+      xournalpp
       #flameshot
       ungoogled-chromium
       picard
@@ -66,7 +66,7 @@
       ripgrep
       obsidian
       qbittorrent
-      python38     
+      python39
       fd
       # language servers
       nodePackages.typescript-language-server
