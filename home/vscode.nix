@@ -87,16 +87,19 @@
 
       #github.copilot
       github.copilot
-      
+
       #vim
       vscodevim.vim
+
+      #c/c++
+      ms-vscode.cpptools
 
       #python
       ms-python.python
 
       #path-intellisense
       christian-kohler.path-intellisense
-      
+
       ## rescript
       chenglou92.rescript-vscode
 

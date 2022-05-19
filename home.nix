@@ -88,6 +88,8 @@
       xclip
       protonvpn-cli
       unzip
+      openvpn
+      libtelnet
 
       # nix
       nixpkgs-fmt
